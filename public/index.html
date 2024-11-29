@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários - Grêmio Style</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Gerenciamento de Usuários</h1>
+    </header>
+    <main class="container">
+        <section class="form-section">
+            <form id="userForm">
+                <div class="input-group">
+                    <input type="text" id="username" placeholder="Nome de usuário" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <button type="submit">Adicionar Usuário</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Usuários</h2>
+            <ul id="userList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 - Inspirado nas cores do Grêmio</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
