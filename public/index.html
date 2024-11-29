@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciamento de Usuários - Grêmio Style</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
     <header>
         <h1>Gerenciamento de Usuários</h1>
     </header>
     <main class="container">
+        <!-- Formulário para adicionar novo usuário -->
         <section class="form-section">
             <form id="userForm">
                 <div class="input-group">
@@ -20,13 +21,29 @@
                 <button type="submit">Adicionar Usuário</button>
             </form>
         </section>
+        
+        <!-- Formulário de Atualização -->
+        <section class="form-section" id="updateSection" style="display:none;">
+            <h2>Atualizar Usuário</h2>
+            <form id="updateUserForm">
+                <input type="hidden" id="updateUserId">
+                <div class="input-group">
+                    <input type="text" id="updateUsername" placeholder="Novo nome de usuário" required>
+                    <input type="email" id="updateEmail" placeholder="Novo email" required>
+                </div>
+                <button type="submit">Atualizar Usuário</button>
+            </form>
+        </section>
+
+
+        <!-- Lista de Usuários -->
         <section>
             <h2>Lista de Usuários</h2>
             <ul id="userList"></ul>
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 - Inspirado nas cores do Grêmio</p>
+        <p>&copy; 2024 - Inspirado nas cores do ABSOLUTO IMORTAL KEKW</p>
     </footer>
     <script src="app.js"></script>
 </body>

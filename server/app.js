@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const routes = require('./routes');
 
 const app = express();
-const PORT = 3306;
+const PORT = 3000;
 
 // Middlewares
 app.use(bodyParser.json());
